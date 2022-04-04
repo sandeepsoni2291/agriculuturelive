@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+    {% load static %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fab</title>
+
+<link rel="icon" type="image/png" sizes="40x40" href="">
+<link rel="stylesheet" href="{% static 'css/reset.css'%}" media="all">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" media="all">
+<link rel="stylesheet" href="{% static 'css/screen.css' %}" media="all">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <div id="wrapper">
+        <!--header--> 
+        {% include "includes/header.html" %}
+        <!--header end-->
+
+        <section class="container">
+            {% include "includes/banner.html" %}
+
+            <div class="mainGrid1">
+                <div class="inner">
+                    <div class="title">
+                        <h1>
+                            Farming is not just for growing crops, it is for the cultivation of human beings !!! 
+                        </h1>
+                    </div>
+                    <div class="insider">
+                        <div class="col fig">
+                            <img src="{% static 'img/corn-stalk-big.jpg' %}" alt="">
+                        </div>
+                        <div class="col art">
+                            <h4>What is Lorem Ipsum?</h4>
+                            <p>“Lorem Ipsum is simply dummy text of,<span><br/></span> the printing and typesetting<span><br/></span>
+                                industry. Lorem Ipsum <span><br/></span>
+                                has been the industry's <span><br/></span>
+                                standard dummy text”</p>
+                            <div class="smallFig"><img src="{% static 'img/corn-stalk.png' %}" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+{% block content %}
+            <!-- <div class="mainGrid2">
+                <div class="inner">
+                    <div class="thumbBlog">
+                        <img src="{% static 'img/sunflower.png' %}" alt="">
+                        <img src="{% static 'img/flax-seeds2.png' %}" alt="">
+                        <img src="{% static 'img/mustard.png' %}" alt="">
+                        <img src="{% static 'img/black-sesame.png' %}" alt="">
+                    </div> 
+
+                    <div class="button">
+                        <a href="#">+ Shop all seeds</a>
+                    </div>
+                </div>
+            </div> -->
+{% endblock %}
+            <div class="mainGrid3">
+                <div class="inner">
+                    <div class="col bgArt">
+                        <div class="pattern">                            
+                            <h3>
+                                What is <br>
+                                <span>Lorem Ipsum?</span>
+                            </h3>
+                            <p>
+                                “Lorem Ipsum is simply<span><br/></span>
+                                 dummy text of the printing<span><br/></span>
+                                 and typesetting <span><br/></span>
+                                 industry” . 
+                            </p>
+                        </div>
+                        <div class="seeds">
+                            <img src="{% static 'img/flax-seeds.png' %}">
+                        </div>
+                        <div class="butn">
+                            <a href="#">Shop</a>
+                        </div>
+                    </div>
+
+                    <div class="col art">
+                        <h2>
+                            What is Lorem Ipsum?
+                        </h2>
+                        <p>
+                            “Lorem Ipsum is simply dummy text of <span><br/></span>
+                            the printing and typesetting<span><br/></span>
+                            industry. Lorem Ipsum <span><br/></span>
+                            has been the industry's <span><br/></span>
+                            standard dummy text”
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainGrid4">
+                <div class="inner">
+                    <div class="figArt">
+                        <div class="col">
+                            <div class="insider">
+                                <img src="{% static 'img/typesOfSeeds.png' %}">
+                                <h4>Types Of Seeds</h4>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="insider">
+                                <img src="{% static 'img/fertilizers.png' %}">
+                                <h4>Fertilizers</h4>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="insider">
+                                <img src="{% static 'img/soilTesting.png' %}">
+                                <h4>Soil Testing</h4>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="insider">
+                                <img src="{% static 'img/typeOfSoil.png' %}">
+                                <h4>Types Of Soil</h4>
+                            </div>    
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="footer">
+                <div class="inner">
+                    <div class="footNav">
+                        <div class="col col1">
+                            <h3>Quick links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">About </a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQs </a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy </a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms and Conditions </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col col2">
+                            <h3>Our Product</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">seeds </a>
+                                </li>                       
+                            </ul>
+                        </div>
+                        <div class="col col3">
+                            <h3>CONTACT</h3>
+                            <ul>
+                                <li>
+                                    <span class="iconCall"></span><a href="tel:+234345456678">+234 345 456 678 </a>
+                                </li>
+                                <li>
+                                    <span class="iconMail"></span><a href="mailto:info@fab.com">info@fab.com </a>
+                                </li>                          
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footEnd">
+                        <div class="socialIcons snd-col m7 l8">
+                            <ul>
+                                <li>
+                                    <a href="#" class="iconFb"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="iconIn"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="iconTwitter"></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="iconInsta"></a>
+                                </li>
+                            </ul>
+                          
+                        </div>
+
+                        <div class="copyRights snd-col m5 l4">
+                            <img src="{% static 'img/footLogo.png' %}">
+                            <p>@2020, Farmer Allainces for business-All rights Reserved</p>
+                        </div>
+                        <div class="snd-clear"></div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+   </div>  
+   <script src="{% static 'js/reset.js' %}"></script> 
+  
+</body>
+</html>
+

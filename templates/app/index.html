@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+{{data}}
+<div class="mainGrid2">
+                <div class="inner">
+                    <div class="thumbBlog">
+                        {% for product in data %}
+                        {{product.prod_name}}
+                        {{product.prod_description}}
+                        <!-- <img src="{% static 'img/sunflower.png' %}" alt="">
+                        <img src="{% static 'img/flax-seeds2.png' %}" alt="">
+                        <img src="{% static 'img/mustard.png' %}" alt="">
+                        <img src="{% static 'img/black-sesame.png' %}" alt=""> -->
+                        {% endfor %}
+                    </div> 
+
+                    <div class="button">
+                        <a href="#">+ Shop all seeds</a>
+                    </div>
+                </div>
+            </div>
+{% endblock %}

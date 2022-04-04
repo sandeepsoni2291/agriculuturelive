@@ -1,0 +1,98 @@
+{% load static %}
+<header id="header" class="header">
+    <div class="topPanel">
+        <div class="inner">
+            <div class="snd-col l9">
+                <div class="location">
+                    <a href="#">Maharashtra</a>
+                </div>
+                <div class="language">
+                    <a href="#">Language</a>
+                    <select name="language">
+                        <option>(EN)</option>
+                        <option>(Hi)</option>
+                    </select>
+                </div>
+                <div class="weather">
+                    <a href="#">                            
+                        32.4 <sup>C |  F</sup>
+                    </a>
+                    <p>Sunset 6:23 PM</p>
+                </div>
+            </div>
+            <div class="registerBlock snd-col l3 snd-right-align">
+                <a href="#">Login</a> 
+
+                <a href="#">Sign up</a>
+            </div>
+            <div class="snd-clear"></div>    
+        </div>
+    </div>
+
+    <div class="inner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="{% static 'img/logo.png' %}" alt="">                    
+            </a>
+        </div>
+        <div class="menuIcon hideMin999">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <nav class="nav hideMax999">
+            <ul>    
+                <li><a href="index.html">Home</a></li>
+                <li class="downArrow">
+                    <a>Shop </a>
+                    <div class="dropdown">
+                        <ul>
+                            <li class="seeds">
+                                <a href="seeds.html">Seeds </a>
+                            </li>
+
+                            <li class="fertilizers">
+                                <a href="#">Fertlizers </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="downArrow">
+                    <a href="#">More</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li class="profile">
+                                <a href="#">My Profile </a>
+                            </li>
+
+                            <li class="wallet">
+                                <a href="#">My Wallet </a>
+                            </li>
+
+                            <li class="weather">
+                                <a href="#">Weather </a>
+                            </li>
+                            <li class="notification">
+                                <a href="#">Notification </a>
+                            </li>
+
+                            <li class="order">
+                                <a href="#">My order </a>
+                            </li>
+
+                            <li class="logout">
+                                <a href="#">Logout </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>                  
+                <li class="search"><a href="#"><img src="{% static 'img/icons/search.png' %}" alt=""></a></li>                  
+                <li class="cart"><a href="#"><img src="{% static 'img/icons/shopping-cart.png' %}" alt=""></a></li>                  
+                
+            </ul>    
+        </nav>
+    </div>                
+</header> 
